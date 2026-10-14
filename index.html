@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="CICADA — contemporary Indian essentials. Thoughtful everyday clothing, designed around real life.">
+  <title>CICADA — Made for everyday.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Thoughtful essentials for everyday life <span>—</span> Discover the first collection</div>
+  <header class="site-header">
+    <button class="mobile-menu icon-button" aria-label="Open menu" id="menu-toggle">☰</button>
+    <a class="wordmark" href="#home" aria-label="CICADA home"><span class="cicada-mark" aria-hidden="true">◈</span><span>CICADA</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#shop/polos">Shop</a><a href="#shop/linen-shirts">Linen</a><a href="#about">Our philosophy</a><a href="#journal">Journal</a>
+    </nav>
+    <div class="header-actions"><button class="text-button search-open" id="search-open">Search</button><button class="icon-button bag-button" id="cart-open" aria-label="Open shopping bag">Bag <span id="bag-count">0</span></button></div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="wordmark footer-wordmark" href="#home"><span class="cicada-mark">◈</span><span>CICADA</span></a><p>Thoughtful essentials.<br>Designed around real life.</p></div>
+      <div><h4>Explore</h4><a href="#shop/polos">Polos & T-Shirts</a><a href="#shop/linen-shirts">Linen Shirts</a><a href="#shop/linen-trousers">Linen Trousers</a><a href="#shop/bottoms">Everyday Bottoms</a></div>
+      <div><h4>Discover</h4><a href="#about">About CICADA</a><a href="#journal">The Journal</a><a href="#contact">Contact us</a><a href="#size-guide">Size guide</a></div>
+      <div class="newsletter"><h4>Notes from CICADA</h4><p>Product stories, fabric knowledge and considered essentials.</p><form id="newsletter-form"><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe">↗</button></form><small id="newsletter-message">A concept newsletter for the CICADA experience.</small></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 CICADA — Student concept project</span><span>Designed with everyday life in mind.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow">YOUR SELECTION</span><h2>Your bag <span id="drawer-count">(0)</span></h2></div><button class="icon-button" id="cart-close" aria-label="Close bag">✕</button></div><div id="cart-items" class="cart-items"></div><div class="cart-bottom"><div class="cart-total"><span>Subtotal</span><strong id="cart-total">₹0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark button-full" id="checkout-button">Continue to checkout <span>↗</span></button><small>Demo checkout — no payment will be collected.</small></div></aside>
+  <div class="search-modal" id="search-modal" aria-hidden="true"><button class="icon-button search-close" id="search-close" aria-label="Close search">✕</button><span class="eyebrow">FIND YOUR EVERYDAY</span><form id="search-form"><input id="search-input" type="search" placeholder="Search products..." autocomplete="off"><button aria-label="Search">↗</button></form><div id="search-results"></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
